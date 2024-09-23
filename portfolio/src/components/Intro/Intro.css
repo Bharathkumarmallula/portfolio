@@ -1,0 +1,64 @@
+.intro{
+    height: calc(100vh-4rem);
+ /* the height is called, we need 100vh(view Height) and it will delete 4 rem as the navbar height is 4 rem*/
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative
+}
+.bg{
+    position: absolute;
+    top: -4rem;
+    right:0 ;
+    z-index: -1;
+    /**/
+    object-fit: cover;
+    /*TO save the image from shrinking or streching*/
+    height: 100vh;
+}
+.introContent{
+   margin-top:15rem;
+    height: 100hv;
+    width: 100vw;
+    padding: 2rem;
+    font-size: 40px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+}
+.hello{
+    font-size: 1.75rem;
+    font-weight: 100;
+}
+.introName{
+    color:rgb(255, 140, 0)
+}
+.introPara{
+    font-size: medium;
+    font-weight: 100;
+}
+.btn{
+    background:white;
+    margin:1rem 0;
+    border: 0;
+    border-radius: 6px;
+    height: 2rem;
+    width: 6rem;
+    font-weight: bold;
+    justify-content: center;
+    
+}
+.hireMeBtnImg{
+    height: 17px;
+    margin: 0 3px;
+    object-fit: cover;
+
+}
+@media screen and (max-width:430px) {
+   .introContent{
+    font-size: 30px;
+   }
+    
+}
